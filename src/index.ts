@@ -26,7 +26,10 @@ function main() {
 	const handler = createMcp();
 
 	// 1. 创建 Express 服务
-	const app = createMcpExpressApp();
+	const app = createMcpExpressApp({
+		allowedHosts: env.allowedHosts,
+		allowedOrigins: env.allowedHosts,
+	});
 
 	const nodeHandler = toNodeHandler(handler);
 

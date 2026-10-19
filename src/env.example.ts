@@ -25,6 +25,7 @@ const env = {
 	listenAddress: "localhost",
 	listenPort: 3000,
 	deepseekApiKey: "deepseek搜索服务秘钥",
+	allowedHosts: ["localhost", "127.0.0.1"],
 };
 
 export default env;
